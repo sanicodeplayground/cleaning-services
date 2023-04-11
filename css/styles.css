@@ -1,0 +1,399 @@
+:root {
+  --text-color: #051d40;
+  --rates-bg-color: #005f50;
+  --hero-bg-color: #f4f4f4;
+  --white: #fff;
+  --primaryBackground: #ffe6dc;
+  --secondaryBackground: #fff8f5;
+  --primaryAccent: #f76161;
+
+  --font: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--secondaryBackground);
+  color: var(--text-color);
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  display: block;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.section {
+  display: block;
+  padding: 1rem;
+}
+
+main {
+  padding: 5rem 0 0 0;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+/* Page Headers */
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h6 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Spectral", serif;
+  color: var(--rates-bg-color);
+}
+p {
+  font-size: 1.15em;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+a {
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  transform: scale(1.1);
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--primaryBackground);
+  margin: 0 auto;
+  width: 100%;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+header .menu {
+  display: none;
+}
+
+header .menu-icon {
+  font-size: 2rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+/* Main Menu */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--primaryBackground);
+}
+
+.menu .logo {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  max-width: 100px;
+}
+
+.menu .nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+}
+
+.menu .nav-links a {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.menu .nav-links a:hover,
+.menu .nav-links a:active {
+  color: var(--primaryAccent);
+}
+
+/* Hero Section */
+.section-hero {
+  position: relative;
+  margin-top: 0;
+  padding-top: 0;
+  background-color: var(--hero-bg-color);
+  background-image: url("../img/bg.png");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin: 0 auto;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  margin: 0 auto;
+}
+
+.hero .btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  background-color: var(--text-color);
+  color: var(--primaryBackground);
+  text-decoration: none;
+  border-radius: 0.25rem;
+  font-weight: 500;
+}
+
+/* Banner Section */
+.banner {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: var(--rates-bg-color);
+}
+.banner h3 {
+  font-weight: 200;
+  color: var(--white);
+}
+/* About Section */
+.about {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+  background-color: var(--secondaryBackground);
+}
+
+.about img {
+  width: 100%;
+  height: auto;
+}
+
+.about .about-content {
+  text-align: left;
+}
+
+.about .about-content p {
+  margin-bottom: 1rem;
+}
+
+.about .about-content a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--text-color);
+  color: var(--primaryBackground);
+  text-decoration: none;
+  border-radius: 0.25rem;
+}
+
+/* What I Clean Section */
+.what-i-clean {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--primaryBackground);
+}
+
+.what-i-clean .what-i-clean-content {
+  text-align: left;
+}
+
+.what-i-clean .what-i-clean-content p {
+  margin-bottom: 1rem;
+}
+
+.what-i-clean .what-i-clean-content a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--text-color);
+  color: var(--primaryBackground);
+  text-decoration: none;
+  border-radius: 0.25rem;
+}
+
+/* My Rates Section */
+.rates {
+  background-color: var(--rates-bg-color);
+  color: var(--white);
+}
+.rates h1,
+.rates h2,
+.rates h3,
+.rates p {
+  color: var(--white);
+}
+
+.regular-clean,
+.oven-clean,
+.end-of-tenancy,
+.short-term-let {
+  margin-bottom: 1rem;
+}
+
+/* Contact Me Section */
+.contact {
+  background-color: var(--secondaryBackground);
+}
+
+.contact .contact-info {
+  text-align: left;
+}
+
+.contact .contact-info p {
+  margin-bottom: 1rem;
+}
+
+.contact .contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .contact-form label {
+  font-weight: bold;
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+.contact .contact-form input,
+.contact .contact-form textarea {
+  padding: 0.5rem;
+  border: 1px solid var(--text-color);
+  border-radius: 0.25rem;
+}
+
+.contact .contact-form .services {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact .contact-form button {
+  padding: 0.5rem 1rem;
+  background-color: var(--text-color);
+  color: var(--primaryBackground);
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  margin: 2rem 0;
+}
+
+/* Footer */
+footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: var(--secondaryBackground);
+  color: var(--text-color);
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+  .container {
+    width: 100%;
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .section {
+    padding: 4rem 0;
+  }
+
+  /* Main Menu */
+  .menu .nav-links {
+    gap: 2rem;
+  }
+
+  /* Hero Section */
+
+  .hero h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+    margin: 0 auto;
+  }
+
+  .hero .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  /* About Section */
+  .container-grid {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 80px;
+    grid-row-gap: 30px;
+    grid-template-areas: ". .";
+  }
+}
